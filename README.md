@@ -1,5 +1,7 @@
 # Fast-Food-Fast
 
+[![Build Status](https://travis-ci.org/ongebo/fff-frontend.svg?branch=develop)](https://travis-ci.org/ongebo/fff-frontend)
+
 Order Fast-Food Online, Have it Delivered Fast
 
 ## Overview
