@@ -1,6 +1,7 @@
 # Fast-Food-Fast
 
 [![Build Status](https://travis-ci.org/ongebo/fff-frontend.svg?branch=develop)](https://travis-ci.org/ongebo/fff-frontend)
+[![Coverage Status](https://coveralls.io/repos/github/ongebo/fff-frontend/badge.svg?branch=develop)](https://coveralls.io/github/ongebo/fff-frontend?branch=develop)
 
 Order Fast-Food Online, Have it Delivered Fast
 

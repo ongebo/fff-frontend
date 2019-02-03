@@ -8,3 +8,6 @@ install:
 
 script:
   - yarn test --coverage
+
+after_script:
+  - yarn run coveralls
