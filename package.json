@@ -6,10 +6,15 @@
   "repository": "https://github.com/ongebo/fff-frontend.git",
   "author": "Ongebo Isaac",
   "license": "MIT",
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {"\\.css": "<rootDir>/src/__mocks__/StyleMock.js"}
+  },
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -18,11 +23,14 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
