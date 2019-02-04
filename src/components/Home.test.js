@@ -7,7 +7,7 @@ import { shallow } from 'enzyme';
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe('<Home />', () => {
-  it('contains <Views />', () => {
+  it('contains a welcome paragraph', () => {
     const wrapper = shallow(<Home />);
     expect(wrapper.find('p').text()).toEqual('Welcome to the Home page.');
   });

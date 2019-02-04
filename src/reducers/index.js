@@ -1,7 +1,18 @@
 import { combineReducers } from 'redux';
+import {
+  isRequesting,
+  noNetwork,
+  invalidRegistrationData,
+  signupError,
+  successMessage
+} from './SignupReducers';
 
 const rootReducer = combineReducers({
-  // Assign slices of state to individual reducers.
+  isRequesting,
+  noNetwork,
+  invalidRegistrationData,
+  signupError,
+  successMessage
 });
 
 export default rootReducer;

@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.css';
 import Views from './views/Views';
+import { ToastContainer } from 'react-toastify';
 
 class App extends Component {
   render() {
-    return <Views />;
+    return (
+      <React.Fragment>
+        <ToastContainer position="top-center" />
+        <Views />
+      </React.Fragment>
+    );
   }
 }
 

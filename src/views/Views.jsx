@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SignupView from './SignupView'
 import Login from '../components/Login';
 import Home from '../components/Home';
 
@@ -8,9 +9,9 @@ class Views extends Component {
     return (
       <Router>
         <Switch>
-          <Route to="/" component={Home} />
-          <Route to="/login" component={Login} />
-          <Route to="/home" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/register" component={SignupView} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </Router>
     );
