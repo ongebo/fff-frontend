@@ -1,14 +1,14 @@
 import React from 'react';
-import App from './App';
+import Home from './Home';
 import Enzyme from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-describe('<App />', () => {
+describe('<Home />', () => {
   it('contains <Views />', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find('Views')).toHaveLength(1);
+    const wrapper = shallow(<Home />);
+    expect(wrapper.find('p').text()).toEqual('Welcome to the Home page.');
   });
 });

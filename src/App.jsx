@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.css';
+import Views from './views/Views';
 
 class App extends Component {
   render() {
-    return <h1>Welcome to Fast-Food-Fast!</h1>;
+    return <Views />;
   }
 }
 

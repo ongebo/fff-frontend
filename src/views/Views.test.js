@@ -1,14 +1,14 @@
 import React from 'react';
-import App from './App';
+import Views from './Views';
 import Enzyme from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-describe('<App />', () => {
-  it('contains <Views />', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find('Views')).toHaveLength(1);
+describe('<Views />', () => {
+  it('contains a <Switch />', () => {
+    const wrapper = shallow(<Views />);
+    expect(wrapper.find('Switch')).toHaveLength(1);
   });
 });
