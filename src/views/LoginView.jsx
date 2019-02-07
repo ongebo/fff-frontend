@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/layout/Header';
-import SignupForm from '../components/signup/SignupForm';
+import LoginForm from '../components/login/LoginForm';
 import Spinner from '../components/spinner/Spinner';
 
-export class SignupView extends Component {
+class LoginView extends Component {
   render() {
     return (
       <React.Fragment>
         <Header />
-        <SignupForm />
+        <LoginForm />
         <Spinner display={this.props.isRequesting} />
       </React.Fragment>
     );
@@ -25,4 +25,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   null
-)(SignupView);
+)(LoginView);

@@ -10,6 +10,7 @@ export function registerUser(userData, history) {
     return fetch(`${API_URL}/auth/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      CORS: 'no-cors',
       body: JSON.stringify(userData)
     })
       .then(response => response.json())

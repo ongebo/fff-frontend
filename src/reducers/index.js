@@ -6,8 +6,10 @@ import {
   signupError,
   successMessage
 } from './SignupReducers';
+import authentication from './LoginReducers';
 
 const rootReducer = combineReducers({
+  authentication,
   isRequesting,
   noNetwork,
   invalidRegistrationData,

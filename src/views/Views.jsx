@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SignupView from './SignupView'
-import Login from '../components/Login';
-import Home from '../components/Home';
+import SignupView from './SignupView';
+import LoginView from './LoginView';
 
 class Views extends Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={LoginView} />
           <Route exact path="/register" component={SignupView} />
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/login" component={LoginView} />
         </Switch>
       </Router>
     );
