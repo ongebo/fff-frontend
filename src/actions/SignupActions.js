@@ -1,6 +1,5 @@
 import * as types from './Types';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const API_URL = process.env.API_URL;
 

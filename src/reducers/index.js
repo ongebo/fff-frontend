@@ -7,6 +7,7 @@ import {
   successMessage
 } from './SignupReducers';
 import authentication from './LoginReducers';
+import { menu } from './FoodOrderReducers';
 
 const rootReducer = combineReducers({
   authentication,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
   noNetwork,
   invalidRegistrationData,
   signupError,
-  successMessage
+  successMessage,
+  menu
 });
 
 export default rootReducer;

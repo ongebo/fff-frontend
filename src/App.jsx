@@ -3,8 +3,9 @@ import { hot } from 'react-hot-loader';
 import './App.css';
 import Views from './views/Views';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <React.Fragment>

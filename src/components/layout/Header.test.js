@@ -7,7 +7,7 @@ import Header from './Header';
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe('<Header />', () => {
-  it('contains a <div /> with name "header"', () => {
+  it('contains a <div /> with class "header"', () => {
     const wrapper = shallow(<Header />);
     expect(wrapper.find('div').hasClass('header')).toEqual(true);
   });

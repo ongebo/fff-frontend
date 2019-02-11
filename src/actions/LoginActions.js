@@ -1,4 +1,4 @@
-import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE } from './Types';
+import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from './Types';
 
 const API_URL = process.env.API_URL;
 
@@ -26,6 +26,7 @@ export function loginUser(userData, history) {
             type: LOGIN_SUCCESS,
             payload: { isAdmin: data.admin, token: data.token }
           });
+          localStorage.setItem('credentials', data.token);
           history.push('/menu');
         }
       })
@@ -36,5 +37,12 @@ export function loginUser(userData, history) {
           message: error.toString()
         })
       );
+  };
+}
+
+export function logoutUser() {
+  return function(dispatch) {
+    localStorage.removeItem('credentials');
+    dispatch({ type: LOGOUT });
   };
 }

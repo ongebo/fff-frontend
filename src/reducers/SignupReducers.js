@@ -2,6 +2,8 @@ import * as types from '../actions/Types';
 
 export function isRequesting(state, action) {
   switch (action.type) {
+    case types.GET_MENU_REQUEST:
+    case types.PLACE_ORDER_REQUEST:
     case types.SIGNUP_REQUEST:
     case types.LOGIN_REQUEST:
       return true;
